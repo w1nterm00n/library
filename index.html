@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Library</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+    <h1>The Library</h1>
+    <button class="add_book_btn">Add new book</button>
+    </div>
+
+    <div class="new_book_form">
+        <div class="hat">
+        <h3>New Book</h3> <img src="cross1.png" class="cross">
+        </div>
+
+        <form id="bookForm" action="idk">
+
+        <label>
+        <input type="text" id="title" name="title" placeholder="Title:" required><br>
+        </label>
+
+        <label>
+        <input type="text" id="author" name="author" placeholder="Author:" required><br>
+        </label>
+
+        <label>
+        <input type="text" id="number_of_pages" name="number_of_pages" placeholder="Number Of Pages:" required><br>
+        </label>
+
+        <label>
+        <label for="checkbox" style="font-size: 20px;">Read:</label>
+        </label>
+
+        <label>
+        <input type="checkbox" id="checkbox" name="read"> <br>
+        </label>
+
+        <button type="submit" id="submit_btn">Add</button>
+        </form>
+    </div>
+
+
+    <div class="book_instance_wrapper">
+    </div>
+
+</body>
+</html>
