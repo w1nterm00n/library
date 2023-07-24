@@ -45,19 +45,20 @@ function serializeForm(formNode) {
       return(formValues);
 }
 
-function BookConstructor (arrayValueFromForm){
-    this.title = arrayValueFromForm[0].value;
-    this.author = arrayValueFromForm[1].value;
-    this.pages = arrayValueFromForm[2].value;
-    this.isRead = arrayValueFromForm[3].value; 
+class Book {
+    constructor(arrayValueFromForm){
+        this.title = arrayValueFromForm[0].value;
+        this.author = arrayValueFromForm[1].value;
+        this.pages = arrayValueFromForm[2].value;
+        this.isRead = arrayValueFromForm[3].value; 
+    }
 }
 
 function makeNewBook(arrayValueFromForm){
-    var book = new BookConstructor(arrayValueFromForm);
+    var book = new Book(arrayValueFromForm);
     library.push(book);
     return book;
 }
-
 
 function displayBook(book){
     let book_instance = document.createElement('div');
