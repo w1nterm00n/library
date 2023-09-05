@@ -20,7 +20,6 @@ bookForm.addEventListener("submit", function (event) {
 	event.preventDefault(); //чтобы форма не отправлялась на сервер
 	new_book_form.style.cssText = "display: none";
 	let valueFromForm = formManipulation.serializeForm(bookForm);
-	formManipulation.formValidation();
 	let book = makeNewBook(valueFromForm);
 	displayBook(book);
 });
